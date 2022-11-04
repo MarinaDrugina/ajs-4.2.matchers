@@ -1,9 +1,3 @@
-export default function sortCharacters(a, b) {
-  if (a.health > b.health) {
-    return -1;
-  }
-  if (a.health < b.health) {
-    return 1;
-  }
-  return 0;
+export default function sortCharacters(array) {
+  return array.sort((a, b) => b.health - a.health);
 }

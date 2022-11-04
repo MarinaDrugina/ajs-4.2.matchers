@@ -13,7 +13,6 @@ test('good health checking', () => {
     { name: 'ратник', health: 80 },
     { name: 'мечник', health: 10 },
   ];
-  //let result = sortCharacters(characters);
   const result = characters.sort(sortCharacters);
   expect(result).toEqual(standard);
 });
